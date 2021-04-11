@@ -1,2 +1,181 @@
-body { height: 100vh; color: #1f1f1f; background: linear-gradient(to bottom, #bada55, #c0ffee); }
+html{width: 100%;
+    margin: 0;}
+body { 
+    color: #1f1f1f; 
+    background-color: rgb(196, 248, 228);
+    margin:0;
+    background: linear-gradient(to bottom, #a5aaaa, #c0ffee); 
+}
+
+.cabecera{
+    font-family: 'Dela Gothic One', cursive;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin:0;
+    width: 100%;
+}
+
+.logo{
+    padding-left: 40px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.iconos div{
+    padding: 10px;
+}
+
+.cuerpo{
+    background: url(/fondo.28b577ca.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color:white;
+}
+
+.titulos{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo2{
+    color:#D2BF37;
+}
+
+.listaMenu{
+    list-style: none;
+    background-color: bisque;
+    margin-top: 0;
+    overflow: auto;
+    width: 100%;
+    font-size: larger;
+}
+
+.listaMenu a{
+    float:left;
+    text-decoration: none;
+    color:black;
+    background-color: #D2BF37;
+    font-size: large;
+    width: 25%;
+    text-align: center;
+}
+
+.listaMenu a:hover{
+    color:#D2BF37;
+    background-color: black;
+}
+
+.slideImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .categorias{
+    flex:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.mySlides {display: none;}
+
+.imagenes {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+  
+.imagenes img {
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+#txtInfo p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.cuadroCategorias{
+    /* background: url(img/logo.jpg) no-repeat center center fixed; */
+    background-color:#D2BF37;
+    opacity:0.8;
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.categorias{
+    padding:0;
+}
+
+.categorias li{
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    font-size: large;
+}
+
+.categorias>li>a{
+    text-decoration: none;
+    color:black;
+}
+
+.about{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#conocenos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#txtAbout p{
+    color:#D2BF37;
+    background-color: #1f1f1f;
+    margin:0px;
+    padding-top: 10px;
+}
+
+#txtAbout h1{
+    margin-top: 80px;
+}
+
+#txtAbout h1 a{
+    display: table-cell;
+    text-decoration: none;
+    color:#D2BF37;
+}
+
+#txtAbout h1 a:hover{
+    color:white;
+}
+
+.animales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+
 /*# sourceMappingURL=/style.e308ff8e.css.map */
