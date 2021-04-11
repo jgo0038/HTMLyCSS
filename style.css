@@ -4,7 +4,7 @@ body {
     color: #1f1f1f; 
     background-color: rgb(196, 248, 228);
     margin:0;
-    background: linear-gradient(to bottom, #a5aaaa, #c0ffee); 
+    /* background: linear-gradient(to bottom, #a5aaaa, #c0ffee);  */
 }
 
 .cabecera{
