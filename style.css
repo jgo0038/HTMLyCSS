@@ -2,10 +2,12 @@ html{width: 100%;
     margin: 0;}
 body { 
     color: #1f1f1f; 
-    background-color: rgb(196, 248, 228);
+    /* background-color: rgb(196, 248, 228); */
     margin:0;
     /* background: linear-gradient(to bottom, #a5aaaa, #c0ffee);  */
 }
+
+
 
 .cabecera{
     font-family: 'Dela Gothic One', cursive;
@@ -32,11 +34,13 @@ body {
 }
 
 .cuerpo{
-    background: url(img/fondo.jpg) no-repeat center center fixed;
+    background: url(img/fondo.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     color:white;
 }
 
@@ -100,16 +104,6 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
-/* .categorias{
-    flex:100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 .mySlides {display: none;}
 
 .imagenes {
@@ -230,6 +224,7 @@ body {
     width: 60%;
     max-width: 60%;
     background:url("img/fondoMenu.jpg") no-repeat;
+    background-size: cover;
     color: black;
     margin-bottom: 50px;
 }
@@ -284,7 +279,7 @@ body {
     width: 60%;
 }
 
-#fotoMenu{
+.fotoMenuGrande{
     float: left;
     margin-right: 10px;
     height:150px;
@@ -292,8 +287,27 @@ body {
     border-radius: 10%;
 }
 
+.fotoMenu{
+    float: left;
+    margin-right: 20px;
+    max-width: 130px;
+    max-height: 73px;
+    height:auto;
+    width:100%;
+    border-radius: 10%;
+}
+
+.platos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .descripcion{
     width: 60%;
+    background-color:  rgba(102, 91, 91, 0.4);
+    
 }
 .descripcion *{
     font-size: large;
@@ -317,4 +331,49 @@ body {
 
 .volver button:hover{
     cursor:pointer;
+}
+
+#granero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#granero img{
+    height: 200px;
+    width: 320px;
+    border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+    html{
+        display: flex;
+    }
+    h1,h2,h3{
+        font-size: small;
+    }
+    body *{font-size: small;}
+
+    .imagenes {
+      height: 70px;
+      width: 110px;
+    }
+    .imgLogo{
+      height: 80px;
+      width: 70px;
+    }
+
+    #txtAbout h1{
+        margin: 0;
+    }
+
+    .fotoMenuGrande{
+        height: 70px;
+      width: 110px;
+    }
+
+    .fotoMenu{
+        height: 40px;
+      width: 80px;
+    }
 }

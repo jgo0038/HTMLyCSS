@@ -1,3 +1,4 @@
+import $ from 'jquery'
 var slideIndex = 0;
 showSlides();
 
