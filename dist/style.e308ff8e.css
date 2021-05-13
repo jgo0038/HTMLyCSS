@@ -1,22 +1,34 @@
-html{width: 100%;
-    margin: 0;}
-body { 
-    color: #1f1f1f; 
-    /* background-color: rgb(196, 248, 228); */
-    margin:0;
-    /* background: linear-gradient(to bottom, #a5aaaa, #c0ffee);  */
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    color: #1f1f1f;
 }
-
-
-
+div {
+    box-sizing: border-box;
+    }
 .cabecera{
     font-family: 'Dela Gothic One', cursive;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    align-items: left;
     margin:0;
     width: 100%;
+}
+
+.estrellasImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogoPath{
+    height: 100px;
+    width: 100px;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .logo{
@@ -26,7 +38,6 @@ body {
 .iconos{
     display: flex;
     justify-content: right;
-    align-items: right;
 }
 
 .iconos div{
@@ -147,12 +158,28 @@ body {
     text-decoration: none;
     color:black;
 }
+.categorias>li>a:hover{
+    text-decoration: none;
+    color:white;
+}
 
 .about{
+    background-color: #D2BF37;
     display: flex;
     align-items:center;
     justify-content:center;
     flex-direction: column;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+#masInfo{
+    text-align: center;
+}
+
+.logoFooter{
+    text-align: center;
+    margin-top:10px
 }
 
 #conocenos{
@@ -162,25 +189,35 @@ body {
     flex-direction: row;
 }
 
-#txtAbout p{
+#txtAbout{
+    display: flex;
+    flex-direction: row;
+}
+
+#txtAbout h3 {
+    margin-left: 5%;
+}
+#txtAbout h3 a{
+    display: table-cell;
+    text-decoration: none;
+    color:black;
+}
+
+#txtAbout h3 a:hover{
+    color:white;
+}
+
+.siguenos{
     color:#D2BF37;
     background-color: #1f1f1f;
     margin:0px;
-    padding-top: 10px;
+    width: 100%;
+    text-align: center;
 }
 
-#txtAbout h1{
-    margin-top: 80px;
-}
-
-#txtAbout h1 a{
-    display: table-cell;
-    text-decoration: none;
-    color:#D2BF37;
-}
-
-#txtAbout h1 a:hover{
-    color:white;
+.siguenos img{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .animales{
@@ -213,6 +250,8 @@ body {
     transform: scale(1.1);
 }
   
+
+
 .listaMenus{
     display: flex;
     justify-content: center;
@@ -224,6 +263,14 @@ body {
     background-size: cover;
     color: black;
     margin-bottom: 50px;
+}
+
+.imagenMenu{
+    text-align: center;
+}
+
+.imagenMenu img{
+    border-radius: 8%;
 }
 
 .menus{
@@ -337,12 +384,117 @@ body {
 }
 
 #granero img{
-    height: 200px;
-    width: 320px;
+    height: 45%;
+    width: 45%;
     border-radius: 5px;
+    -webkit-animation-name: ampliar;
+            animation-name: ampliar;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
 }
 
-@media (max-width: 400px) {
+.encontrarnos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+.visibleImg{
+    /* height: 20px;
+    width: 20px; */
+    display: block;
+}
+
+.svg-icon-hidden{
+    display:none;
+}
+
+.svg-icon {
+  width: 5em;
+  height: 5em;
+  visibility:visible;
+  display: block;
+  -webkit-animation-name: ampliar;
+          animation-name: ampliar;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+.svg-icon circle {
+  stroke: #D2BF37;
+  stroke-width: 1;
+}
+
+.svg-icon:hover {
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    cursor: pointer;
+}
+
+@-webkit-keyframes ampliar{
+    0% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+@keyframes ampliar{
+    0% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+@media (max-width:800px){
+    .imgLogo{
+        margin-left: 0px;
+        height: 80px;
+        width: 70px;
+      }
+
+    .imgLogoPath{
+        height: 50px;
+        width: 50px;
+    }
+
+    .imgFooter{
+        height: 30px;
+        width: 30px;
+    }
+
+    .visibleImg{
+        height: 150px;
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 420px) {
     html{
         display: flex;
     }
@@ -356,22 +508,35 @@ body {
       width: 110px;
     }
     .imgLogo{
-      height: 80px;
-      width: 70px;
+      height: 60px;
+      width: 45px;
+    }
+
+    .imgLogoPath{
+        height: 35px;
+        width: 35px;
     }
 
     #txtAbout h1{
         margin: 0;
     }
 
-    .fotoMenuGrande{
+    .visibleImg{
+        height: 70px;
+        width: 70px;
+    }
+    /* .fotoMenuGrande{
         height: 70px;
       width: 110px;
-    }
+    } */
 
     .fotoMenu{
-        height: 40px;
-      width: 80px;
+      height: auto;
+      width: auto;
+      margin-bottom: 10px;
+    }
+    .platos{
+      flex-direction: column;
     }
 }
 

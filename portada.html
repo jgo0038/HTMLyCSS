@@ -14,18 +14,24 @@
 </head>
 
 <body>
-
-    <div class="cabecera">
+    <header class="cabecera">
         <div class="logo">
-            <img class="imgLogo" src="img/logo1.png" alt="logo" height="165" width="165">
+            <img class="imgLogo" src="img/logo2.svg" alt="logo" height="165" width="165">
         </div>
         <div class="titulos">
             <h1 class="titulo">
                 Menú para todos
             </h1>
-            <h3 class="titulo2">
+            <div class="estrellasImg">
+                <img class="imgLogoPath" src="img/logo1.png" alt="Perro comiendo">
+                <img class="imgLogoPath" src="img/perro-zapatilla.jpg" alt="Perro con zapatilla">
+                <img class="imgLogoPath" src="img/pez-comiendo.jpg" alt="Pez comiendo">
+                <img class="imgLogoPath" src="img/tortuga.jpg" alt="Tortuga comiendo">
+                <img class="imgLogoPath" alt="Roedores" src="img/Cobaya.jpg">
+            </div>
+            <!-- <h3 class="titulo2">
                 Que tu mascota también disfrute comiendo
-            </h3>
+            </h3> -->
         </div>
         <div class="iconos">
             <div class="login">
@@ -35,7 +41,7 @@
                 <img src="img/logout.png" alt="logout" height="30" width="30">
             </div>
         </div>
-    </div>
+    </header>
     <div class="cuerpo">
         <nav class="listaMenu">
             <a href="categorias.html"> Categorías</a>
@@ -47,10 +53,6 @@
 
         <div class="slideImages">
             <div class="imagenes">
-                <div class="mySlides">
-                    <img src="img/perro-comiendo.jpg" alt="Perro comiendo">
-                </div>
-
                 <div class="mySlides">
                     <img src="img/perro-zapatilla.jpg" alt="Perro con zapatilla">
                 </div>
@@ -98,27 +100,31 @@
                 </ul>
             </div>
         </div>
-
-        <div class="about">
-            <div>
-                <h1>
-                    Obten más información sobre nosotros
-                </h1>
-            </div>
-            <div id="conocenos">
-                <div class="logo"><img class="imgLogo" alt="logo" src="img/logo1.png"></div>
-                <div id="txtAbout">
-                    <h1><a href="about.html">Conócenos</a></h1>
-                    <p>Síguenos en nuestras redes</p>
-                    <p>
-                        <img src="img/facebook.png" alt="Facebook" height="20" width="20">
-                        <img src="img/gorjeo.png" alt="Twitter" height="20" width="20">
-                        <img src="img/instagram.png" alt="Instagram" height="20" width="20">
-                    </p>
-
-                </div>
-            </div>
+        <div id="masInfo">
+            <h1>
+                Obten más información sobre nosotros
+            </h1>
         </div>
+        <footer class="about">
+
+            <div id="conocenos">
+                <div class="logoFooter"><img class="imgFooter" alt="logo" src="img/logo2.svg" height="40" width="40">
+                </div>
+                <div id="txtAbout">
+                    <h3><a href="categorias.html">Categorías</a></h3>
+                    <h3><a href="about.html">Conócenos</a></h3>
+                    <h3><a href="documentacion.html">Documentación</a></h3>
+                </div>
+
+            </div>
+            <div class="siguenos">
+                <p>Síguenos en nuestras redes</p>
+
+                <img src="img/facebook.png" alt="Facebook" height="25" width="25">
+                <img src="img/gorjeo.png" alt="Twitter" height="25" width="25">
+                <img src="img/instagram.png" alt="Instagram" height="25" width="25">
+            </div>
+        </footer>
     </div>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="portada.js"></script>

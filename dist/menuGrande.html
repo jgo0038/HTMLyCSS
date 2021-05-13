@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="cabecera">
+    <header class="cabecera">
         <div class="logo">
-            <a href="/portada.html"><img src="/logo1.caab8263.png" alt="logo" height="165" width="165"></a>
+            <a href="/portada.html"><img class="imgLogo" src="/logo2.1a12886c.svg" alt="logo" height="165" width="165"></a>
         </div>
         <div class="titulos">
             <h1 class="titulo">
@@ -30,7 +30,7 @@
                 <img src="/logout.4f07171e.png" alt="logout" height="30" width="30">
             </div>
         </div>
-    </div>
+    </header>
     <div class="cuerpo">
         <div class="titulos">
             <h1>Menú grande para mamíferos</h1>
@@ -39,18 +39,31 @@
                 <div class="descripcionMenu">
 
                     <p>
-                        <img class="fotoMenuGrande" alt="TerrenoLibre" src="/campo.199e097a.jpg">
-                        Disponemos de un servicio de terraza en el exterior, donde su animal de compañia
-                        podrá disfrutar de una comida al aire libre e interaccionar con animales del mismo
-                        tipo disfrutando de un gran parque y naturaleza.<br>
-                        Si el tiempo no acompaña o se prefiere comer en interior, estarán igual de cómodos en
-                        nuestras instalaciones interiores con césped artificial para que disfruten de la misma
-                        sensación. <br>
+                    <div style="text-align: center;">
+                        <picture>
+                            <img srcset="/campo_small.a7e793b8.jpg 110w,/campo_medium.421195a7.jpg 187w" sizes="
+                                         (max-width: 600px) 110px,
+                                         (min-width:601px) 300px" src="/campo.199e097a.jpg">
+                        </picture><br>
+                    </div>
+                    Disponemos de un servicio de terraza en el exterior, donde su animal de compañia
+                    podrá disfrutar de una comida al aire libre e interaccionar con animales del mismo
+                    tipo disfrutando de un gran parque y naturaleza.<br>
+                    Si el tiempo no acompaña o se prefiere comer en interior, estarán igual de cómodos en
+                    nuestras instalaciones interiores con césped artificial para que disfruten de la misma
+                    sensación.<br>
                     </p>
                     <b>A elegir entre servicio interior o exterior</b><br>
                     <div class="platos">
-                        <img class="fotoMenu" alt="PlatoComida1" src="/menuEj.6e5b72ae.jpg">
-                        <img class="fotoMenu" alt="PlatoComida2" src="/menuEj2.c7a905f3.jpg">
+                        <picture class="fotoMenu" style="height: 75px;width:125px">
+                            <source class="fotoMenu" media="(max-width: 800px)" srcset="/menuEj_small.39702ccd.jpg">
+                            <img class="fotoMenu" alt="PlatoComida1" src="/menuEj.6e5b72ae.jpg">
+                        </picture>
+                        <picture class="fotoMenu" style="height: 75px;width:125px">
+                            <source class="fotoMenu" media="(max-width: 800px)" srcset="/menuEj2_small.19c7c743.jpg">
+                            <img class="fotoMenu" alt="PlatoComida2" src="/menuEj2.c7a905f3.jpg">
+                        </picture>
+
                     </div>
                     <b>Elegir 1 plato entrante de los siguientes:</b>
                     <ul>
