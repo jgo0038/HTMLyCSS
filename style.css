@@ -45,9 +45,6 @@ div {
 
 .cuerpo{
     background: url(img/fondo.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -56,9 +53,6 @@ div {
 
 .cuerpoInfo{
     background: url(img/fondoInfo.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     color:white;
 }
@@ -76,7 +70,7 @@ div {
 }
 
 .titulo2{
-    color:#D2BF37;
+    color:black;
 }
 
 .listaMenu{
@@ -239,8 +233,6 @@ div {
 }
 
 .imgCategoria{
-    height: 180px;
-    width: 280px;
     filter: brightness(70%);
     transition: transform 1s, filter 2s ease-in-out;
 }
