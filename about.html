@@ -12,7 +12,8 @@
 <body>
     <header class="cabecera">
         <div class="logo">
-            <a href="portada.html"><img class="imgLogo" src="img/logo2.svg" alt="logo" height="165" width="165"></a>
+            <a href="portada.html"><img loading="lazy" class="imgLogo" src="img/logo2.svg" alt="logo" height="165"
+                    width="165"></a>
         </div>
         <div class="titulos">
             <h1 class="titulo">
@@ -24,10 +25,10 @@
         </div>
         <div class="iconos">
             <div class="login">
-                <img src="img/login.png" alt="login" height="30" width="30">
+                <img loading="lazy" src="img/login.png" alt="login" height="30" width="30">
             </div>
             <div class="exit">
-                <img src="img/logout.png" alt="logout" height="30" width="30">
+                <img loading="lazy" src="img/logout.png" alt="logout" height="30" width="30">
             </div>
         </div>
     </header>
@@ -92,15 +93,16 @@
                             </path>
                         </svg>
                     </a>
-                    <img id="imgMap" class="svg-icon-hidden" src="img/maps.jpg" height="300" width="300"
+                    <img loading="lazy" id="imgMap" class="svg-icon-hidden" src="img/maps.jpg" height="300" width="300"
                         style="margin-bottom:10px;" alt="Ubicacion">
                 </div>
             </div>
 
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
+    <script async="async" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script async="async" src="about.js"></script>
+    <!-- <script>
 
         function mostrarMapa() {
             $("#iconoMap").addClass("svg-icon-hidden");
@@ -112,7 +114,7 @@
         document.getElementById('iconoMap').addEventListener('click', () => {
             mostrarMapa();
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
