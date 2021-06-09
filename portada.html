@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.scss">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
     <title>Portada</title>
 </head>
 
@@ -121,14 +121,22 @@
             <div class="siguenos">
                 <p>Síguenos en nuestras redes</p>
 
-                <img loading="lazy" src="img/facebook.png" alt="Facebook" height="25" width="25">
-                <img loading="lazy" src="img/gorjeo.png" alt="Twitter" height="25" width="25">
-                <img loading="lazy" src="img/instagram.png" alt="Instagram" height="25" width="25">
+                <img loading="lazy" src="img/facebook.svg" alt="Facebook" height="25" width="25">
+                <img loading="lazy" src="img/gorjeo.svg" alt="Twitter" height="25" width="25">
+                <img loading="lazy" src="img/instagram.svg" alt="Instagram" height="25" width="25">
             </div>
         </footer>
     </div>
     <script async="async" src="node_modules/jquery/dist/jquery.js"></script>
     <script async="async" src="portada.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script async="async">
+        WebFont.load({
+            google: {
+                families: ['Dela Gothic One:400,600,700,400italic,700italic', 'Oswald:400,700']
+            }
+        });
+    </script>
 </body>
 
 </html>
